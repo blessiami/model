@@ -84,12 +84,20 @@ To proceed with the experiment, the following 4 arguments need to be set.
 
     train_data: Training dataset path. It should be CITYSCAPES_ROOT or CAMVID_ROOT
     val_data: Validation dataset path. It should be CITYSCAPES_ROOT or CAMVID_ROOT
-    l4_module: A module applied to the base network output(output stride 16). It should be selected from None, DeformConv2d, SqzDeformConv, SPP, ASPP and DSP.
-    l3_module: A module applied to the output stride 8. It should be selected from None, SPP, ASPP and DSP.)
+    l4_module: A module applied to the base network output(output stride 16). It should be selected from None, DeformConv2d, SqzDeformConv, SPP, ASPP and DSPP.
+    l3_module: A module applied to the output stride 8. It should be selected from None, SPP, ASPP and DSPP.)
 
+To set up as shown in Table 3, 4 and 5, give the following values please.
 
-
-
+    Original                              : --l4_module None --l3_module None
+    Deformable Convolution                : --l4_module 'DeformConv2d' --l3_module None
+    Squeezed Deformable Convolution (ours): --l4_module 'SqzDeformConv' --l3_module None
+    SPP                                   : --l4_module 'SPP' --l3_module None
+    ASPP                                  : --l4_module 'ASPP' --l3_module None
+    DSPP (ours)                           : --l4_module 'DSPP' --l3_module None
+    SPP Extension                         : --l4_module 'SPP' --l3_module 'SPP'
+    ASPP Extension                        : --l4_module 'ASPP' --l3_module 'ASPP'
+    Extended DSPP (ours)                  : --l4_module 'DSPP' --l3_module 'DSPP'
 
 ## Single GPU
 
