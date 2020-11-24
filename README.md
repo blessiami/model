@@ -124,6 +124,8 @@ To reproduce the results of experimenting with ESPNet V2 with Camvid, enter the 
 ## Multiple GPU
 To train and validate by using multiple GPUs, the above arguments should be set in the script files.
 
+> misc_5023/scripts/
+
 To reproduce the results of experimenting with ESPNet V2 with Cityscapes, enter the command below.
 
     ./trainval_espnet2_cityscapes.sh
