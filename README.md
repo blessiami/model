@@ -31,13 +31,22 @@ Therefore, it is recommended to use the dataset from the [kaggle site] with the 
 After downloading the images, the CAMVID_ROOTconsists of the following.
 
 > CAMVID_ROOT
-> > class_dict.csv
-> > test
-> > test_labels
-> > train
-> > train_labels
-> > val
-> > val_labels
+
+    class_dict.csv
+    
+    test
+    
+    test_labels
+    
+    train
+    
+    train_labels
+    
+    val
+    
+    val_labels
+
+
 
 
 
