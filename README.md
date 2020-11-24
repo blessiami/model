@@ -41,7 +41,43 @@ After downloading the images, the CAMVID_ROOTconsists of the following.
 # 2. Python Environment Configuration
 It is recommended to use Anaconda to create an execution environment.
 
+## Anaconda Virtual Environment (optional)
+The code was implemented and tested in Python 3.7. It is not necessary because it can be operated on python 3 or higher.
 
+Run the following command to create a virtual environment in Anaconda, please.
+
+    conda create --name repr python=3.7
+
+Please activate the virtual environment after the installation is complete.
+
+    conda activate repr
+
+## Python Package Installation
+it is necessary for two special packages to install manually. Except that, required modules(tqdm, tensorboardX) are listed in requirements.txt and can be installed with the following command.
+
+    pip install -r requirements.txt
+
+### PyTorch
+The phytorch framework was used to implement the deep learning network.
+PyTorch needs to be installed according to the CUDA environment from the [official site].
+
+The experiment was conducted using PyTorch 1.6.0 in CUDA 10.2 and CUDNN 7.6.5.
+If the same CUDA version is used, it can configure the experiment environment using the command below.
+
+    conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.2 -c pytorch
+
+[official site]: https://pytorch.org/
+
+### Apex
+The apex package was used to expand NVIDA DGX.
+Please install apex from https://www.github.com/nvidia/apex to run this program.
+
+The apex needs to be downloaded and installed by executing the following command.
+
+    
+    git clone https://github.com/NVIDIA/apex.git
+    cd apex
+    python setup.py install
 
 
 
