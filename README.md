@@ -20,5 +20,24 @@ If you unzip both compressed files under CITYSCAPES_ROOT, the folder has two sub
 [cityscapes_login]: https://www.cityscapes-dataset.com/login/ "Go to the Cityscapes download site"
 
 ## Camvid
+Now(Nov 24, 2020), on the [Camvid official site], the extracted image link is disconnected.
+It needs to download and sample the video to construct datasets.
+Therefore, it is recommended to use the dataset from the [kaggle site] with the extracted images.
+
+[Camvid official site]: http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/
+[kaggle site]: https://www.kaggle.com/carlolepelaars/camvid
+
+After downloading the images, the CAMVID_ROOTconsists of the following.
+
+> CAMVID_ROOT
+> > class_dict.csv
+> > test
+> > test_labels
+> > train
+> > train_labels
+> > val
+> > val_labels
+
+
 
 
