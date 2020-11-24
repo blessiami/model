@@ -15,7 +15,6 @@ If you unzip both compressed files under CITYSCAPES_ROOT, the folder has two sub
 > CITYSCAPES_ROOT  
 
     gtFine_trainvaltest
-
     leftImg8bit_trainvaltest
     
 [cityscapes_login]: https://www.cityscapes-dataset.com/login/ "Go to the Cityscapes download site"
