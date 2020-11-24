@@ -5,8 +5,7 @@ How to reproduce the experiments
 It needs to log in to download the [Cityscapes datasets][cityscapes_login].
 To train and validate networks, download two zip files please.
 
-  gtFine_trainvaltest.zip
-  
+  gtFine_trainvaltest.zip  
   leftImg8bit_trainvaltest.zip
 
 Let's call the cityscapes dataset path CITYSCAPES_ROOT.
