@@ -1,4 +1,4 @@
-How to reproduce the experiments
+How to Reproduce the Experiments
 =============
 # 1. Dataset Preparation
 ## Cityscapes
@@ -79,6 +79,19 @@ The apex needs to be downloaded and installed by executing the following command
     cd apex
     python setup.py install
 
+# 3. Training and Validation
+To proceed with the experiment, the following 4 arguments need to be set.
+
+    train_data: Training dataset path. It should be CITYSCAPES_ROOT or CAMVID_ROOT
+    val_data: Validation dataset path. It should be CITYSCAPES_ROOT or CAMVID_ROOT
+    l4_module: A module applied to the base network output(output stride 16). It should be selected from None, DeformConv2d, SqzDeformConv, SPP, ASPP and DSP.
+    l3_module: A module applied to the output stride 8. It should be selected from None, SPP, ASPP and DSP.)
+
+
+
+
+
+## Single GPU
 
 
 
