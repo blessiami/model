@@ -123,6 +123,7 @@ To reproduce the results of experimenting with ESPNet V2 with Camvid, enter the 
     
 ## Multiple GPU
 To train and validate by using multiple GPUs, the above arguments should be set in the script files.
+Each script was created assuming that it uses 2 GPUs.
 
 > misc_5023/scripts/
 
