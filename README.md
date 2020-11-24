@@ -80,6 +80,7 @@ The apex needs to be downloaded and installed by executing the following command
     python setup.py install
 
 # 3. Training and Validation
+The experiment was conducted using two NVIDIA RTX GPUs.
 To proceed with the experiment, the following 4 arguments need to be set.
 
     train_data: Training dataset path. It should be CITYSCAPES_ROOT or CAMVID_ROOT
@@ -100,7 +101,37 @@ To set up as shown in Table 3, 4 and 5, give the following values please.
     Extended DSPP (ours)                  : --l4_module 'DSPP' --l3_module 'DSPP'
 
 ## Single GPU
+To train and validate by using one GPU, the above arguments should be set in the option files.
 
+> misc_5023/options/
 
+    option_espnet2_cityscapes.py: An option when DeepLab V3+ is trained on the Cityscapes datasets
+    option_deeplab3p_cityscapes.py: An option when ESPNet V2 is trained on the Cityscapes datasets
+    option_espnet2_camvid.py: An option when ESPNet V2 is trained on the Camvid datasets
+    
+To reproduce the results of experimenting with ESPNet V2 with Cityscapes, enter the command below.
 
+    python trainval_espnet2_cityscapes.py
 
+To reproduce the results of experimenting with DeepLab V3+ with Cityscapes, enter the command below.
+    
+    python trainval_deeplab3p_cityscapes.py
+    
+To reproduce the results of experimenting with ESPNet V2 with Camvid, enter the command below.
+
+    python trainval_espnet2_camvid.py
+    
+## Multiple GPU
+To train and validate by using multiple GPUs, the above arguments should be set in the script files.
+
+To reproduce the results of experimenting with ESPNet V2 with Cityscapes, enter the command below.
+
+    ./trainval_espnet2_cityscapes.sh
+
+To reproduce the results of experimenting with DeepLab V3+ with Cityscapes, enter the command below.
+    
+    ./trainval_deeplab3p_cityscapes.sh
+    
+To reproduce the results of experimenting with ESPNet V2 with Camvid, enter the command below.
+
+    ./trainval_espnet2_camvid.sh
