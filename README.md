@@ -2,10 +2,8 @@ How to reproduce the experiments
 =============
 # 1. Dataset Preparation
 ## Cityscapes
-You need to log in to download the Cityscapes datasets.
-https://www.cityscapes-dataset.com/login/
+You need to log in to download the [Cityscapes datasets][cityscapes_login].
 
-Link: [Google][googlelink]
 
-[googlelink]: https://google.com "Go google"
+[cityscapes_login]: https://www.cityscapes-dataset.com/login/ "Go to the Cityscapes download site"
 
