@@ -31,18 +31,12 @@ After downloading the images, the CAMVID_ROOTconsists of the following.
 
 > CAMVID_ROOT
 
-    class_dict.csv
-    
-    test
-    
-    test_labels
-    
-    train
-    
-    train_labels
-    
-    val
-    
+    class_dict.csv    
+    test    
+    test_labels    
+    train    
+    train_labels    
+    val    
     val_labels
 
 
